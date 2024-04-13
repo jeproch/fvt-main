@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FVT Architecture</title>
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <div class="navigation-dropdown" id="navigation-dropdown">
+      <div class="navigation-content">
+        <button class="button-for-dropdowns" id="services-btn">Services</button>
+        <br />
+        <button class="button-for-dropdowns" id="about-btn">About</button>
+        <br />
+        <button class="button-for-dropdowns" id="contact-btn">Contact</button>
+        <br />
+      </div>
+      <div class="close-dropdown">
+        <button id="close-button" class="button-for-dropdowns-close">
+          <ion-icon
+            name="close-outline"
+            style="background-color: transparent"
+          ></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="home-page" id="home-page">
+      <div class="heading-contents" id="heading-contents">
+        <div class="heading">
+          <div class="heading-text">
+            <section id="home-section">
+              <h1>FVT Architecture</h1>
+            </section>
+            <h2>"A house is a machine for living in"</h2>
+          </div>
+        </div>
+        <div class="menu-dropdown-button">
+          <button type="button" class="button" id="menu-btn">
+            <span class="button-icon"
+              ><ion-icon name="menu-outline"></ion-icon
+            ></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="home-contents" id="home-contents">
+        <p>
+          We cater to a diverse clientele, including the general public and
+          small-scale developers. Our upcoming drawing bureau exclusively serves
+          architects. Inspired by Le Corbusier, a pioneering French architect,
+          we embrace the concept of functional architecture. We believe homes
+          should be meticulously designed to meet specific needs and desires,
+          considering the significance of people's most cherished moments and
+          precious resources.
+        </p>
+
+        <div class="home-contents-image">
+          <img src="images/Her3.jpg" />
+        </div>
+
+        <h2>Projects</h2>
+        <p>
+          FVT Architecture specializes in residential and industrial
+          architectural projects, providing comprehensive building plans and
+          design excellence. They offer a wide range of services, including new
+          house plans, additions, alterations, and legalization of existing
+          building work. FVT Architecture's portfolio showcases innovative
+          office spaces and state-of-the-art mini factories, demonstrating their
+          ability to bring visionary concepts to life. With meticulous attention
+          to detail and a deep understanding of regulatory requirements, they
+          consistently exceed client expectations, creating spaces that enhance
+          both daily lives and professional pursuits.
+        </p>
+
+        <h2>Resources</h2>
+        <div class="resources-class">
+          <ul>
+            <li onclick="openSACAP()">
+              South African Council for the Architectural Profession
+            </li>
+            <li onclick="openTUT()">TUT - Department of Architecture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons se functions gaan pages wees om minder deurmekaar te maak. -->
+    <div class="pages" id="pages">
+      <div class="services-page" id="services-page">
+        <h2>Services</h2>
+        <ul>
+          <li>Legalization of Building Work (as built)</li>
+          <li>New Building Design</li>
+          <li>Practical Advice on Design and Materials</li>
+          <li>Facilitation of Students Practical Studies (requires cv)</li>
+        </ul>
+        <div class="services-image">
+          <img src="images/upside2.jpg" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
+      </div>
+      <div class="about-page" id="about-page">
+        <h2>About</h2>
+        <p>
+          Francois van Tonder began his architectural journey in 1999, working
+          on small-scale design projects as an independent consultant. He also
+          served as a part-time lecturer, teaching Computer-Aided Design (CAD)
+          at Technikon Pretoria. In addition, he taught horticulture at the same
+          institution for five years. From 2012 to 2013, Francois worked as a
+          lecturer at Inscape Education Group, focusing on architectural
+          draughting and technology.
+        </p>
+        <p>
+          With a B-Tech degree in Architectural Technology, specializing in
+          management, Francois van Tonder is a highly skilled Professional
+          Senior Architectural Technologist. He leads FVT Architecture as its
+          sole practitioner, bringing expertise in architectural principles,
+          attention to detail, and the ability to create spaces that seamlessly
+          blend functionality and aesthetics.
+        </p>
+
+        <div class="about-image">
+          <img src="images/about-section-image-mobile.jpg" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
+      </div>
+      <div class="contact-page" id="contact-page">
+        <h2>Contact</h2>
+        <p>Contact Francois van Tonder to start a project</p>
+        <ul>
+          <li onclick="call()">Cell: 082 872 6262</li>
+          <li onclick="openGmail()">E-mail: fvt@fvt.co.za</li>
+          <li>Professional Senior Architectural Technologist</li>
+        </ul>
+        <div class="contact-image">
+          <img src="images/Her2.jpg" alt="" />
+        </div>
+        <br />
+        <button id="home-after-button" onclick="homeAfterButton()">Home</button>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+
+    <section id="bottom-bar-section">
+      <div class="bottom-bar home-page" id="bottom-bar">
+        <h2 id="bottom-bar-heading">Contact</h2>
+        <p class="hidden-content">Contact Francois van Tonder</p>
+        <ul class="hidden-content">
+          <li onclick="call()">Cell: 082 872 6262</li>
+          <li onclick="openGmail()">E-Mail: fvt@fvt.co.za</li>
+          <li>Professional Senior Architectural Technologist</li>
+        </ul>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="mobile.js"></script>
+  </body>
+</html>
